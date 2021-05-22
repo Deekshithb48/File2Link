@@ -73,7 +73,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Quickly contact @Avishkarpatil",
+                        text="Sorry 😝, You are Banned to use me. Quickly contact @TeleRoid14",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -89,7 +89,7 @@ async def start(b, m):
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh / Try Again",
-                                                     url=f"https://t.me/TeleRoid_File2Link_bot.herokuapp.com/{usr_cmd}")
+                                                     url=f"https://t.me/teleroidfile2linkbot.herokuapp.com/{usr_cmd}")
                             ]
                         ]
                     ),
