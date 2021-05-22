@@ -47,7 +47,7 @@ async def start_services():
     await web.TCPSite(app, bind_address, Var.PORT).start()
     print('\n')
     print('----------------------- Service Started -----------------------')
-    print('                        bot =>> {}'.format((await StreamBot.get_me()).first_name))
+    print('                        bot =>> {}'.format((await Stream.get_me()).first_name))
     print('                        server ip =>> {}:{}'.format(bind_address, Var.PORT))
     if Var.ON_HEROKU:
         print('                        app runnng on =>> {}'.format(Var.FQDN))
