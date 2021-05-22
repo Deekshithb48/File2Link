@@ -9,7 +9,7 @@ import logging
 import importlib
 from pathlib import Path
 from pyrogram import idle
-from .bot import StreamBot
+from .bot import Stream
 from .vars import Var
 from aiohttp import web
 from .server import web_server
@@ -23,7 +23,7 @@ loop = asyncio.get_event_loop()
 async def start_services():
     print('\n')
     print('------------------- Initalizing Telegram Bot -------------------')
-    await StreamBot.start()
+    await Stream.start()
     print('\n')
     print('---------------------- DONE ----------------------')
     print('\n')
