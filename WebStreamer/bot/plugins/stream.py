@@ -1,5 +1,5 @@
 
-# (c) @Avishkarpatil 
+# (c) @PredatorHackerzZ
 
 import asyncio
 from WebStreamer.bot import StreamBot
@@ -48,7 +48,7 @@ async def private_receive_handler(c: Client, m: Message):
         except Exception:
             await c.send_message(
                 chat_id=m.chat.id,
-                text="Something went Wrong. Contact my boss @Avishkarpatil",
+                text="Something went Wrong. Contact me in support Group @TeleRoid14",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -107,7 +107,7 @@ async def channel_receive_handler(bot, broadcast):
     try:
         log_msg = await broadcast.forward(chat_id=Var.BIN_CHANNEL)
         await log_msg.reply_text(
-            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel ID:** `{broadcast.chat.id}`\n**Link:** https://teleroid_file2link_bot.herokuapp.com/{str(log_msg.message_id)}",
+            text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel ID:** `{broadcast.chat.id}`\n**Link:** https://teleroidfile2linkbot.herokuapp.com/{str(log_msg.message_id)}",
             quote=True,
             parse_mode="Markdown"
         )
@@ -116,7 +116,7 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url=f"https://teleroid_file2link_bot.herokuapp.com/{str(log_msg.message_id)}")]
+                    [InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url=f"https://teleroidfile2linkbot.herokuapp.com/{str(log_msg.message_id)}")]
                 ]
             )
         )
