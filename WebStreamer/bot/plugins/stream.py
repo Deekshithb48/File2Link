@@ -26,7 +26,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="__Sorry 😝, You are Banned to use me.__\n  **Contact Developer @TeleRoid14**",
+                    text="__Sorry 😝, You are Banned to use me.__",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
