@@ -7,16 +7,16 @@ load_dotenv()
 
 
 class Var(object):
-    API_ID = int(getenv('API_ID'))
-    API_HASH = str(getenv('API_HASH'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN'))
-    SESSION_NAME = str(getenv('SESSION_NAME', 'teleroidfile2linkbot'))
-    SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
+    API_ID = int(getenv('API_ID','2980496')
+    API_HASH = str(getenv('API_HASH','9415a61fedcc0f00f33667ca46e577a3')
+    BOT_TOKEN = str(getenv('BOT_TOKEN','1687590985:AAEyKb3P65kDBY1vtwMScqenkEokByEh7io')
+    SESSION_NAME = str(getenv('SESSION_NAME', 'UMR_FILE_STORE_BOT'))
+    SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '1'))
     WORKERS = int(getenv('WORKERS', '4'))
     BIN_CHANNEL = int(getenv('BIN_CHANNEL'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-    OWNER_ID = int(getenv('OWNER_ID', '1287407305'))
+    OWNER_ID = int(getenv('OWNER_ID', '1086432320'))
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
     if 'DYNO' in environ:
